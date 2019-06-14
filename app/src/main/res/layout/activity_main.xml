@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3F3F"
+    android:descendantFocusability="afterDescendants"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_favoritas"
+        android:layout_width="124dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="FAVORITAS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_ecua"
+        android:onClick="onclick"/>
+
+
+
+
+    <Button
+        android:id="@+id/btn_ecua"
+        android:layout_width="124dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="ECUCAIONES"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick"/>
+
+
+    <Button
+        android:id="@+id/btn_codg_qr"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Escanear: QR"
+        app:layout_constraintBottom_toTopOf="@+id/codigo-Qr"
+        app:layout_constraintEnd_toStartOf="@+id/agaregar_ecua"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginBottom="4dp"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:id="@+id/agaregar_ecua"
+        android:layout_width="89dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_codg_qr"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/add_new_item" />
+
+    <ImageView
+        android:id="@+id/codigo-Qr"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginBottom="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/add_qr" />
+
+    <ImageView
+        android:id="@+id/logo_App"
+        android:layout_width="239dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ecua"
+        app:layout_constraintVertical_bias="0.056"
+        app:srcCompat="@drawable/ic_launcher" />
+
+</android.support.constraint.ConstraintLayout>
