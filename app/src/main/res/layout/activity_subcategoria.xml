@@ -33,18 +33,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="520dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:background="#1A1127"
+        android:onClick="onClicc"
         android:text="volver"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onClicc"/>
+        app:layout_constraintVertical_bias="0.703" />
 
 
     <Button
@@ -65,5 +68,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_category"
         android:onClick="onClic"/>
+
+    <ListView
+        android:id="@+id/list_tipo_ecuaciones"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="416dp"
+        android:layout_height="337dp"
+        android:layout_marginTop="16dp"
+        android:background="#F7E7F1E9"
+        android:transcriptMode="alwaysScroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bntnn" />
 
 </android.support.constraint.ConstraintLayout>
