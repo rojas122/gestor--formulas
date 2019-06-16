@@ -9,23 +9,39 @@
     android:descendantFocusability="afterDescendants"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_category"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/btn_category3"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="#A41D152A"
-        android:text="subcategorias"
+        android:text="subcategoria ->"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_algebra"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Alebra Lineal"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btn_category3" />
 
     <Button
         android:id="@+id/btn_volver"
@@ -44,42 +60,38 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
+        app:layout_constraintVertical_bias="0.92" />
 
-
-    <Button
-        android:id="@+id/bntnn"
-        android:layout_width="335dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="32dp"
-        android:background="#4D1D1C25"
-        android:fitsSystemWindows="false"
-        android:text=" ECUCACIONES DE ALGEBRA"
-        android:textColor="#FFD600"
-        android:textColorHighlight="#FFD600"
-        android:textColorHint="#FFD600"
-        android:textColorLink="#64DD17"
-        android:textCursorDrawable="@android:drawable/checkbox_on_background"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_category"
-        android:onClick="onClic"/>
 
     <ListView
         android:id="@+id/list_tipo_ecuaciones"
         style="@style/Widget.AppCompat.Light.ListView.DropDown"
-        android:layout_width="416dp"
-        android:layout_height="337dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="379dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
         android:background="#F7E7F1E9"
         android:transcriptMode="alwaysScroll"
+        app:layout_constraintBottom_toTopOf="@+id/btn_volver"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntnn" />
+        app:layout_constraintTop_toBottomOf="@+id/title_algebra" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="82dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cloud_done_black_24dp" />
 
 </android.support.constraint.ConstraintLayout>

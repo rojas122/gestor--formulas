@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_ecua:
                 intent=new Intent(MainActivity.this,category.class);
                 break;
-            case R.id.btn_salir:
+            //case R.id.btn_salir:
                 //finish();
                 //finish();
                 // System.exit(0);
-                intent=new Intent(Intent.ACTION_MAIN);
-                intent.addCategory(Intent.CATEGORY_HOME); //CERRAR APP
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                break;
+              //  intent=new Intent(Intent.ACTION_MAIN);
+                //intent.addCategory(Intent.CATEGORY_HOME); //CERRAR APP
+                //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                //break;
 
         }
         startActivity(intent);
