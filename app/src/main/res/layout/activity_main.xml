@@ -89,7 +89,7 @@
         android:layout_marginRight="234dp"
         android:text="APLI FORMULAS"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:fontFamily="@font/architects_daughter"
         app:layout_constraintEnd_toEndOf="parent"
