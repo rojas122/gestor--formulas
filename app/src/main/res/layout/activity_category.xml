@@ -5,28 +5,27 @@
     android:id="@+id/layout_category"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#213541"
+    android:background="#213546"
     android:descendantFocusability="afterDescendants"
     tools:context=".MainActivity">
 
-    <Button
+    <TextView
         android:id="@+id/btn_category"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="#A41D152A"
+        android:background="#213546"
         android:text="Categorias"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onClic"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_ini"
@@ -38,14 +37,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="#1A1127"
+        android:onClick="onClic"
         android:text="INICIO"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onClic"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bnt_arimetic"
@@ -53,6 +52,7 @@
         android:layout_height="51dp"
         android:layout_marginTop="228dp"
         android:background="#4D1D1924"
+        android:onClick="onClic"
         android:text="   ARITMETICA"
         android:textColor="#FFD600"
         android:textColorHighlight="#FFD600"
@@ -63,8 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_category"
-        android:onClick="onClic"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_category" />
 
     <Button
         android:id="@+id/btn_tgnometria"
@@ -73,6 +72,7 @@
         android:layout_marginTop="320dp"
         android:background="#4D1D1924"
         android:fitsSystemWindows="false"
+        android:onClick="onClic"
         android:text="   TRIGONOMETRIA"
         android:textColor="#FFD600"
         android:textColorHighlight="#FFD600"
@@ -83,8 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_category"
-        android:onClick="onClic"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_category" />
 
     <Button
         android:id="@+id/bnt_calculo"
@@ -105,6 +104,7 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_category" />
+
     <Button
         android:id="@+id/bnt_alge"
         android:layout_width="332dp"
@@ -112,6 +112,7 @@
         android:layout_marginTop="64dp"
         android:background="#4D1D1C25"
         android:fitsSystemWindows="false"
+        android:onClick="onClic"
         android:text="   ALGEBRA LINEAL"
         android:textColor="#FFD600"
         android:textColorHighlight="#FFD600"
@@ -122,7 +123,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_category"
-        android:onClick="onClic"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_category" />
 
 </android.support.constraint.ConstraintLayout>

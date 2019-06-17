@@ -30,6 +30,9 @@ public class category extends AppCompatActivity {
             case R.id.bnt_alge:
                 mintent=new Intent(category.this,subcategoria.class);
                 break;
+             case R.id.bnt_calculo:
+            mintent=new Intent(category.this,Sub_category_calculo.class);
+            break;
         }
         startActivity(mintent);
     }
