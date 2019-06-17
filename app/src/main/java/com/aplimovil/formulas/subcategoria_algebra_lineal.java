@@ -14,7 +14,7 @@ public class subcategoria_algebra_lineal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_subcategoria);
+        setContentView(R.layout.activit_subcategoria_algebra);
         lista_ecua= (ListView) findViewById(R.id.list_tipo_ecuaciones);
         ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this,R.array.arraySub_Category,
                 android.R.layout.simple_list_item_1);
@@ -36,8 +36,8 @@ public class subcategoria_algebra_lineal extends AppCompatActivity {
                 mmintent= new Intent(subcategoria_algebra_lineal.this,MainActivity.class);
 
                 break;
-            case R.id.bnt_alge:
-                mmintent=new Intent(subcategoria_algebra_lineal.this, MainActivity.class);
+            case R.id.sig:
+                mmintent=new Intent(subcategoria_algebra_lineal.this,prueba.class);
         break;
         }
         startActivity(mmintent);
