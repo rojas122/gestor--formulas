@@ -33,6 +33,9 @@ public class category extends AppCompatActivity {
              case R.id.bnt_calculo:
             mintent=new Intent(category.this,Sub_category_calculo.class);
             break;
+            case R.id.bnt_arimetic:
+                mintent=new Intent(category.this,Sub_category_Aritmetica.class);
+                break;
         }
         startActivity(mintent);
     }

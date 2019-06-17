@@ -73,7 +73,7 @@
         android:background="#4D1D1924"
         android:fitsSystemWindows="false"
         android:onClick="onClic"
-        android:text="   TRIGONOMETRIA"
+        android:text="FISICA"
         android:textColor="#FFD600"
         android:textColorHighlight="#FFD600"
         android:textColorHint="#FFD600"
