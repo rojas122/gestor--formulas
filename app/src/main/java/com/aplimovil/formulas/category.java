@@ -27,15 +27,19 @@ public class category extends AppCompatActivity {
                 mintent=new Intent(category.this,MainActivity.class);
 
                 break;
-            case R.id.bnt_alge:
-                mintent=new Intent(category.this,subcategoria.class);
+            case R.id.btn_alge:
+                mintent=new Intent(category.this, subcategoria_algebra_lineal.class);
                 break;
-             case R.id.bnt_calculo:
+             case R.id.btn_calculo:
             mintent=new Intent(category.this,Sub_category_calculo.class);
             break;
-            case R.id.bnt_arimetic:
+            case R.id.btn_arimetic:
                 mintent=new Intent(category.this,Sub_category_Aritmetica.class);
                 break;
+            case R.id.btn_fisica:
+                mintent=new Intent(category.this,Sub_category_Fisica.class);
+                break;
+
         }
         startActivity(mintent);
     }

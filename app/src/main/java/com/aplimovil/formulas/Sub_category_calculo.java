@@ -33,14 +33,14 @@ public class Sub_category_calculo extends AppCompatActivity {
     public void clic_calculo (View view){
         Intent mintent_calculo=null;
         switch (view.getId() ){
-            case R.id.btn_volver2:
+            case R.id.btn_volver_calculo:
                 mintent_calculo=new Intent(Sub_category_calculo.this,category.class);
 
                 break;
-            case R.id.bnt_alge:
+            case R.id.btn_alge:
                 //mintent=new Intent(category.this, subcategoria_algebra_lineal.class);
                 break;
-            case R.id.bnt_calculo:
+            case R.id.btn_calculo:
                // mintent=new Intent(category.this,Sub_category_calculo.class);
                 break;
         }

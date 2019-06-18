@@ -39,10 +39,10 @@ ListView lista_ecua_aritmetica;
                     mintent_aritmetica=new Intent(Sub_category_Aritmetica.this,category.class);
 
                     break;
-                case R.id.bnt_arimetic:
-                   //mintent_aritmetica=new Intent(Sub_category_Aritmetica.this, subcategoria_al.class);
+                case R.id.btn_arimetic:
+                  //  mintent_aritmetica=new Intent(Sub_category_Aritmetica.this, subcategoria_al.class);
                     break;
-                case R.id.bnt_calculo:
+                case R.id.btn_calculo:
                     // mintent=new Intent(category.this,Sub_category_calculo.class);
                     break;
             }
