@@ -4,12 +4,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Sub_category_Fisica"></activity>
+        <activity android:name=".Sub_category_Aritmetica" />
+        <activity android:name=".Sub_category_calculo" />
         <activity android:name=".subcategoria_algebra_lineal" />
+        <activity android:name=".view_algebra"/>
         <activity android:name=".category" />
         <activity android:name=".MainActivity">
             <intent-filter>

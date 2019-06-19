@@ -9,27 +9,56 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class Sub_category_calculo extends AppCompatActivity {
-    ListView lista_ecua_caclulo;
+public class Sub_category_calculo extends AppCompatActivity implements ListView.OnItemClickListener{
+    ListView lista_ecua_calculo;
+    String[] valor_calculo =new String[]{"Ecuacion1","Ecuacion2","Ecuacion3", "Ecuacion4","Ecuacion5"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub_category_calculo);
+        lista_ecua_calculo = (ListView) findViewById(R.id.list_tipo_ecua_calculo);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,valor_calculo);
+        lista_ecua_calculo.setOnItemClickListener(this);
+        lista_ecua_calculo.setAdapter(adapter);
 
-        lista_ecua_caclulo= (ListView) findViewById(R.id.list_tipo_ecua_calculo);
-        ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this,R.array.arraySub_calculo,
-                android.R.layout.simple_list_item_1);
-
-        lista_ecua_caclulo.setAdapter(adapter);
-        lista_ecua_caclulo.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(parent.getContext(),"seleccionaste: "
-                        +parent.getItemAtPosition(position).toString(),Toast.LENGTH_SHORT).show();
-            }
-        });
 
     }
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        String item1 ="Ecuacion1";
+        String item2 = "Ecuacion2";
+        String item3 = "Ecuacion3";
+        String item4 = "Ecuacion4";
+        String item5 = "Ecuacion5";
+
+        String items = (String) adapterView.getItemAtPosition(i);
+        if (items == item1) {
+            Intent item = new Intent(Sub_category_calculo.this, MainActivity.class);
+            item.putExtra("item1", items);
+            startActivity(item);
+        }
+        if (items == item2) {
+            Intent item = new Intent(Sub_category_calculo.this, category.class);
+            item.putExtra("item2", items);
+            startActivity(item);
+        }
+        if (items == item3) {
+            Intent item = new Intent(Sub_category_calculo.this, Sub_category_Fisica.class);
+            item.putExtra("item3", items);
+            startActivity(item);
+        }
+        if (items == item4) {
+            Intent item = new Intent(Sub_category_calculo.this, Sub_category_calculo.class);
+            item.putExtra("item4", items);
+            startActivity(item);
+        }
+        if (items == item5) {
+            Intent item = new Intent(Sub_category_calculo.this, Sub_category_Aritmetica.class);
+            item.putExtra("item5", items);
+            startActivity(item);
+        }
+    }
+
     public void clic_calculo (View view){
         Intent mintent_calculo=null;
         switch (view.getId() ){
