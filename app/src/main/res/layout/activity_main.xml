@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#213541"
     android:descendantFocusability="afterDescendants"
-    tools:context=".MainActivity">
+    tools:context=".Main_y_category.MainActivity">
 
     <Button
         android:id="@+id/btn_favoritas"

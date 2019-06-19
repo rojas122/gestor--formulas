@@ -1,4 +1,4 @@
-package com.aplimovil.formulas;
+package com.aplimovil.formulas.Calculo;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
+
+import com.aplimovil.formulas.Main_y_category.MainActivity;
+import com.aplimovil.formulas.Main_y_category.category;
+import com.aplimovil.formulas.R;
+import com.aplimovil.formulas.Fisica.Sub_category_Fisica;
+import com.aplimovil.formulas.aritmetica.Sub_category_Aritmetica;
 
 public class Sub_category_calculo extends AppCompatActivity implements ListView.OnItemClickListener{
     ListView lista_ecua_calculo;

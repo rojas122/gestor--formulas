@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Sub_category_Fisica"></activity>
-        <activity android:name=".Sub_category_Aritmetica" />
-        <activity android:name=".Sub_category_calculo" />
-        <activity android:name=".subcategoria_algebra_lineal" />
-        <activity android:name=".view_algebra"/>
-        <activity android:name=".category" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".algebra.producto_matrices"></activity>
+        <activity android:name=".algebra.suma_complejos" />
+        <activity android:name=".algebra.suma_matrices" />
+        <activity android:name=".Fisica.Sub_category_Fisica" />
+        <activity android:name=".aritmetica.Sub_category_Aritmetica" />
+        <activity android:name=".Calculo.Sub_category_calculo" />
+        <activity android:name=".algebra.subcategoria_algebra_lineal" />
+        <activity android:name=".algebra.view_algebra" />
+        <activity android:name=".Main_y_category.category" />
+        <activity android:name=".Main_y_category.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

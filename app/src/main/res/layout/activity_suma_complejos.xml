@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:descendantFocusability="afterDescendants"
-    tools:context=".sistem_ecua_lineales">
+    tools:context=".algebra.suma_complejos">
 
     <TextView
         android:id="@+id/ecua_sistema_lineales"
@@ -15,7 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="4dp"
-        android:text="@string/sistema_de"
+        android:text="Suma de"
         android:textColor="#213546"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +28,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
-        android:text="Ecuaciones Lineales"
+        android:text="Numeros Complejos"
         android:textColor="#213546"
         android:textSize="23.8sp"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
@@ -47,7 +46,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="16dp"
         android:background="#1A1127"
-        android:onClick="volver_alge"
+        android:onClick="volver_sum_complejos"
         android:text="@string/volver"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -69,7 +68,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/text_resultado"
+        android:id="@+id/text_suma_complejos"
         android:scrollbars="vertical"
         android:layout_width="340dp"
         android:layout_height="357dp"
@@ -77,7 +76,7 @@
         android:layout_marginBottom="8dp"
         android:background="#FFFFFF"
         android:lineSpacingExtra="5sp"
-        android:text="   En matemáticas y álgebra lineal, un sistema de ecuaciones lineales, también conocido como sistema lineal de ecuaciones o simplemente sistema lineal, es un conjunto de ecuaciones lineales (es decir, un sistema de ecuaciones en donde cada ecuación es de primer grado), definidas sobre un cuerpo o un anillo conmutativo. Un ejemplo de sistema lineal de ecuaciones sería el siguiente:"
+        android:text="La suma de dos números complejos es otro complejo que tiene por componente real la suma de las componentes reales y por componente imaginaria la suma de las componentes imaginarias de los sumandos. Como la adición es ley de composición interna en elconjunto R de los números reales, a+c y b+d son números reales. "
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#1F1E1E"
@@ -89,6 +88,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_text"
         app:layout_constraintVertical_bias="0.021" />
-
 
 </android.support.constraint.ConstraintLayout>

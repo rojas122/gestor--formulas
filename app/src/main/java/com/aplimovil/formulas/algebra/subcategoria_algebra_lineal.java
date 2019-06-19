@@ -1,18 +1,23 @@
-package com.aplimovil.formulas;
+package com.aplimovil.formulas.algebra;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
+
+import com.aplimovil.formulas.Main_y_category.MainActivity;
+import com.aplimovil.formulas.R;
+import com.aplimovil.formulas.aritmetica.Sub_category_Aritmetica;
+import com.aplimovil.formulas.Fisica.Sub_category_Fisica;
+import com.aplimovil.formulas.Calculo.Sub_category_calculo;
+import com.aplimovil.formulas.Main_y_category.category;
 
 public class subcategoria_algebra_lineal extends AppCompatActivity implements ListView.OnItemClickListener  {
  ListView lista_ecua;
-    String[] valor =new String[]{"sistemas de escuaciones lineales","Suma de Matrices","suma de complejos", "Producto de Matrices","Sistema de Ecuaciones por tres "};
+    String[] valor =new String[]{"sistemas de escuaciones lineales","Suma de Matrices","Suma de Complejos", "Producto de Matrices","Sistema de Ecuaciones por tres "};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,17 +47,17 @@ public class subcategoria_algebra_lineal extends AppCompatActivity implements Li
             startActivity(item);
         }
         if (items == item2) {
-            Intent item = new Intent(subcategoria_algebra_lineal.this, category.class);
+            Intent item = new Intent(subcategoria_algebra_lineal.this, suma_matrices.class);
             item.putExtra("item2", items);
             startActivity(item);
         }
         if (items == item3) {
-            Intent item = new Intent(subcategoria_algebra_lineal.this, Sub_category_Fisica.class);
+            Intent item = new Intent(subcategoria_algebra_lineal.this, suma_complejos.class);
             item.putExtra("item3", items);
             startActivity(item);
         }
         if (items == item4) {
-            Intent item = new Intent(subcategoria_algebra_lineal.this, Sub_category_calculo.class);
+            Intent item = new Intent(subcategoria_algebra_lineal.this, producto_matrices.class);
             item.putExtra("item4", items);
             startActivity(item);
         }
@@ -85,7 +90,7 @@ public class subcategoria_algebra_lineal extends AppCompatActivity implements Li
         Intent mmintent=null;
         switch (view.getId() ){
             case R.id.btn_volver:
-                mmintent= new Intent(subcategoria_algebra_lineal.this,MainActivity.class);
+                mmintent= new Intent(subcategoria_algebra_lineal.this, MainActivity.class);
 
               //  break;
             //case R.id.sig:

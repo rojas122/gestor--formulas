@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#213541"
-    tools:context=".Sub_category_Aritmetica">
+    tools:context=".aritmetica.Sub_category_Aritmetica">
 
     <TextView
         android:id="@+id/category_fisica"

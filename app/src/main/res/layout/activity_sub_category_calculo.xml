@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/layout_category_calculo"
     android:background="#213541"
-    tools:context=".Sub_category_calculo">
+    tools:context=".Calculo.Sub_category_calculo">
 
     <TextView
         android:id="@+id/category_fisica"

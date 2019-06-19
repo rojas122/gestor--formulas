@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#213546"
     android:descendantFocusability="afterDescendants"
-    tools:context=".MainActivity">
+    tools:context=".Main_y_category.MainActivity">
 
     <TextView
         android:id="@+id/btn_category"
