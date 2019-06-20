@@ -16,7 +16,7 @@ import com.aplimovil.formulas.aritmetica.Sub_category_Aritmetica;
 
 public class Sub_category_calculo extends AppCompatActivity implements ListView.OnItemClickListener{
     ListView lista_ecua_calculo;
-    String[] valor_calculo =new String[]{"Ecuacion1","Ecuacion2","Ecuacion3", "Ecuacion4","Ecuacion5"};
+    String[] valor_calculo =new String[]{"Ecuacion1","Ecuacion2","Ecuacion3", "Ecuacion4"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,34 +34,30 @@ public class Sub_category_calculo extends AppCompatActivity implements ListView.
         String item2 = "Ecuacion2";
         String item3 = "Ecuacion3";
         String item4 = "Ecuacion4";
-        String item5 = "Ecuacion5";
+
 
         String items = (String) adapterView.getItemAtPosition(i);
         if (items == item1) {
-            Intent item = new Intent(Sub_category_calculo.this, MainActivity.class);
+            Intent item = new Intent(Sub_category_calculo.this, calculo_equation_1.class);
             item.putExtra("item1", items);
             startActivity(item);
         }
         if (items == item2) {
-            Intent item = new Intent(Sub_category_calculo.this, category.class);
+            Intent item = new Intent(Sub_category_calculo.this, calculo_equation_2.class);
             item.putExtra("item2", items);
             startActivity(item);
         }
         if (items == item3) {
-            Intent item = new Intent(Sub_category_calculo.this, Sub_category_Fisica.class);
+            Intent item = new Intent(Sub_category_calculo.this, calculo_equation_3.class);
             item.putExtra("item3", items);
             startActivity(item);
         }
         if (items == item4) {
-            Intent item = new Intent(Sub_category_calculo.this, Sub_category_calculo.class);
+            Intent item = new Intent(Sub_category_calculo.this, calculo_equation_4.class);
             item.putExtra("item4", items);
             startActivity(item);
         }
-        if (items == item5) {
-            Intent item = new Intent(Sub_category_calculo.this, Sub_category_Aritmetica.class);
-            item.putExtra("item5", items);
-            startActivity(item);
-        }
+
     }
 
     public void clic_calculo (View view){
