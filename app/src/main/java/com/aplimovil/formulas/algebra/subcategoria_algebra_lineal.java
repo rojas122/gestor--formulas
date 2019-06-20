@@ -17,7 +17,7 @@ import com.aplimovil.formulas.Main_y_category.category;
 
 public class subcategoria_algebra_lineal extends AppCompatActivity implements ListView.OnItemClickListener  {
  ListView lista_ecua;
-    String[] valor =new String[]{"sistemas de escuaciones lineales","Suma de Matrices","Suma de Complejos", "Producto de Matrices","Sistema de Ecuaciones por tres "};
+    String[] valor =new String[]{"sistemas de escuaciones lineales","Suma de Matrices","Suma de Complejos", "Producto de Matrices","Sistema de Ecuaciones por tres"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +62,7 @@ public class subcategoria_algebra_lineal extends AppCompatActivity implements Li
             startActivity(item);
         }
         if (items == item5) {
-            Intent item = new Intent(subcategoria_algebra_lineal.this, Sub_category_Aritmetica.class);
+            Intent item = new Intent(subcategoria_algebra_lineal.this, sistem_ecuac_por_tres.class);
             item.putExtra("item5", items);
             startActivity(item);
         }

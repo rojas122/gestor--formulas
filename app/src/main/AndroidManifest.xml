@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".algebra.producto_matrices"></activity>
+        <activity android:name=".algebra.sistem_ecuac_por_tres"></activity>
+        <activity android:name=".algebra.producto_matrices" />
         <activity android:name=".algebra.suma_complejos" />
         <activity android:name=".algebra.suma_matrices" />
         <activity android:name=".Fisica.Sub_category_Fisica" />
